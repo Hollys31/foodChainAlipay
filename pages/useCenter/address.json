@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "我的地址",
+  "usingComponents": {
+     "i-icon": "/components/icon/icon"
+  }
+}

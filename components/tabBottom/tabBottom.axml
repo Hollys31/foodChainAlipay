@@ -1,0 +1,15 @@
+  
+<view class="tabbar_box" style="background-color:{{tabbar.backgroundColor}}; {{tabbar.position=='top'?'top:0':'bottom:0'}}">
+  <view class="tabbar_nav" style="width:{{1/tabbar.items.length*100}}%;" a:for="{{tabbar.items}}" a:key="index">
+    <navigator openType="redirect"  style="color:{{item.selected?tabbar.selectedColor:tabbar.textColor}}" url="{{item.pagePath}}" >
+      <image class="tabbar_icon" src="{{item.selected?item.activeIcon:item.icon}}" lazy-load="true">
+      </image>
+      <text>{{item.name}}    
+      </text>
+    </navigator>
+  </view>
+  <navigator class="center-bar" url="/pages/scanQRCode/scanQRCode" redirect hover-class="none" lazy-load="true">
+    <image src="/assets/images/scan.png" mode="aspectFill" />
+  </navigator>
+</view>
+</template>

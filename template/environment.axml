@@ -1,0 +1,36 @@
+<template name="environment" class="environment">
+  <view class='currdata'>
+    <swiper current='{{environmentData.current}}'  autoplay="true" onChange='onSlideChangeEnd'>
+      <swiper-item>
+        <text>实时湿度(%)         
+        </text>             {{ environmentData.humidity}}                
+      </swiper-item>
+      <swiper-item>
+        <text>实时温度(℃)        
+        </text>            {{ environmentData.temperature}}                
+      </swiper-item>
+    </swiper>
+    <view class='swiper-icon swiper_next'>
+      <text class="iconfont icon-more" fontSize="40rpx" onTap='nextImg'>
+      </text>
+    </view>
+    <view class='swiper-icon swiper_prew' onTap='prevImg'>
+      <text class="iconfont icon-more" fontSize="40rpx ">
+      </text>
+    </view>
+  </view>
+  <view class='chart humidity-chart' a:if="{{environmentData.current==0}}">
+    <view class="container">
+      <view class='tit'>生长湿度（%）
+      </view>
+      <canvas id="humidity" disable-scroll=true onTouchStart="touchStart" onTouchMove="touchMove" onTouchEnd="touchEnd" width="{{width}}" height="{{height}}" />
+    </view>
+  </view>
+  <view class='chart temputure-chart' a:if="{{environmentData.current==1}}">
+    <view class="container">
+      <view class='tit'>生长温度（℃）
+      </view>
+     <canvas id="temperature" disable-scroll=true onTouchStart="touchStart" onTouchMove="touchMove" onTouchEnd="touchEnd" width="{{width}}" height="{{height}}" />
+    </view>
+  </view>
+</template>

@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "意见反馈",
+  "usingComponents": {
+     "i-icon": "/components/icon/icon"
+  }
+}

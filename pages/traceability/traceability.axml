@@ -1,0 +1,23 @@
+<view class='traceability'>
+  <view class='map'>
+    <map class="map" id="map" longitude="{{ traceMapData.longitude}}" latitude="{{ traceMapData.latitude}}" show-location="true" markers="{{ traceMapData.markers}}">
+    </map>
+  </view>
+  <view class='trace-wrap'>
+    <view class='title-wrap'>
+      <view class='title'>
+        <view class='white'></view>
+        <view class='text'>溯源详情
+        </view>
+      </view>
+    </view>
+    <view class='trace-info'>
+      <view class='item' a:for="{{traceData}}" a:key="{{index}}">
+        <view>{{item.time}}
+        </view>
+        <view>{{item.address}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,70 @@
+
+<view>
+  <!-- 轮播图 -->
+  <view class='indBanner'>
+    <swiper autoplay='true' circular='true' indicator-dots indicator-active-color="#fff">
+      <block>
+        <swiper-item>
+          <image src='/assets/images/indBanner.png' class="slide-image" />
+        </swiper-item>
+        <swiper-item>
+          <image src='/assets/images/indBanner.png' class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 健康知识 -->
+  <view class='message'>
+    <image src='/assets/images/tip.png' />
+    <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="2000">
+      <block a:for="{{msgList}}" a:key="index">
+        <swiper-item>
+          <view class="swiper_item">{{item}}</view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 今日菜品 -->
+  <view class="title">
+    <text>今日菜品</text>
+    <navigator hover-class='none' url='/pages/dishes/dishes'>更多
+      <i-icon iconClass="icon-more" fontSize="24rpx"></i-icon>
+    </navigator>
+  </view>
+  <scroll-view class='dishes scroll-view' scroll-x>
+    <block a:for="{{greens}}" a:key="key">
+      <view class='item' data-variety="{{item.variety}}" data-id="{{item.id}}" onTap='toMaterialsPage'>
+        <image src='{{item.imgUrl}}' />
+        <view class='text'>
+          <view class='name'>{{item.name}}</view>
+          <view class='material'>
+            {{item.material}}
+            <text a:if="{{item.state==0}}">烹饪中</text>
+            <text a:elif="{{condition}}" a:if="{{item.state==1}}">运输中</text>
+            <text a:if="{{item.state==2}}">运输完成</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+  <!-- 绿色源地 -->
+  <view class="title">
+    <text>绿色源地</text>
+    <navigator hover-class='none' url='/pages/greenSource/greenSource'>更多
+      <i-icon iconClass="icon-more" fontSize="24rpx"></i-icon>
+    </navigator>
+  </view>
+  <scroll-view class='source-area scroll-view' scroll-x>
+    <block a:for="{{sourceLis}}" a:key="key">
+      <navigator hover-class='none' url='/pages/greenSource/detail' class='item'>
+        <image src="{{item.imgUrl}}" lazy-load='true' />
+        <view class='text'>
+          {{item.name}}
+          <text>{{item.address}}</text>
+        </view>
+      </navigator>
+    </block>
+  </scroll-view>
+  <select-modal a:if="{{!varietyHidden}}" varity="{{varity}}"  onChangeVisual="onChangeVisual"></select-modal>
+  <tab-bottom  tabbar="{{tabbar}}"></tab-bottom>
+</view>

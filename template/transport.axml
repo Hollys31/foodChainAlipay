@@ -1,0 +1,21 @@
+<template name="transport">
+  <block a:for="{{transportData}}" a:key="index">
+    <view class='item clearfix'>
+      <image src='{{item.imgUrl}}' lazy-load='true' class='farming-img' onTap='getCurrentMap'/>
+      <view class='material-list-text'>
+        <view>运输起点：{{item.startAddress}}
+        </view>
+        <view>运输终点：{{item.endAddress}}
+        </view>
+        <view>作业耗时：{{item.hour}}
+        </view>
+        <view>作业人员：{{item.worker}}
+        </view>
+      </view>
+    </view>
+  </block>
+  <view class="{{traceMapData.isMapHidden?'model-hidden':'model-wrap'}}" onTap='getCurrentMap'>
+  </view>
+  <map class="{{traceMapData.isMapHidden?'model-hidden':''}}" id="map" longitude="{{traceMapData.longitude}}" latitude="{{traceMapData.latitude}}" scale="6" markers="{{traceMapData.markers}}"  show-location>
+  </map>
+</template>

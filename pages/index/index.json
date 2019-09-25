@@ -1,0 +1,8 @@
+{  
+    "defaultTitle": "首页",
+    "usingComponents": {
+    "i-icon": "/components/icon/icon",
+    "tab-bottom":"/components/tabBottom/tabBottom",
+    "select-modal":"/components/selectModal/selectModal"
+  }
+}

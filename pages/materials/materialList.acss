@@ -1,0 +1,389 @@
+
+@import './../../components/icon/icon.acss';
+page {
+  background: #fff;
+}
+.material-list-wrap{
+  width: 100%;
+}
+.chart .container {
+  position: absolute;
+  top: 500rpx;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 700rpx;
+  height: 700rpx;
+  margin: 0 25rpx;
+  background: #fff;
+  border-radius: 8rpx;
+}
+.chart .tit{
+  color: #666;
+  font-size: 30rpx;
+  padding-left: 50rpx;
+  padding-top: 28rpx;
+}
+
+.all-first-sort {
+  width: 690rpx;
+  padding: 15rpx 30rpx;
+  background: #fff;
+  box-shadow: 1rpx 1rpx 10rpx 2rpx #efefef;
+  position: absolute;
+  font-size: 28rpx;
+  color: #888;
+  top: 80rpx;
+  bottom: 0;
+  z-index: 1001;
+}
+
+.all-first-sort .item {
+  padding: 5rpx;
+  margin: 8rpx 20rpx;
+  width: 120rpx;
+  float: left;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.material-list-wrap .first-nav {
+  position: relative;
+  padding: 0 27rpx;
+  height: 88rpx;
+}
+
+.material-list-wrap .more {
+  position: absolute;
+  right: 0;
+  top: 12rpx;
+  clear: both;
+  padding: 3rpx 6rpx;
+  display: block;
+  width: 90rpx;
+  text-align: center;
+  color: #aaa;
+ 
+}
+
+
+.material-list-wrap .more>text {
+  display: block;
+  float: left;
+  width: 6rpx;
+  height: 40rpx;
+  background: linear-gradient(to top right, #fff 0%, #efefef 25%, #eee 100%);
+  margin-top: 6rpx;
+}
+.material-list-wrap .more .icon {
+  line-height: 50rpx;
+  background: none;
+  margin-top: 0;
+  margin-left: 8rpx
+}
+
+.menu-list {
+  width: 590rpx;
+  height: 88rpx;
+  display: inline-block;
+  white-space: nowrap;
+  background: #fff;
+  padding-left: 8rpx;
+}
+
+.menu-item {
+  height: 85rpx;
+  display: inline-block;
+  line-height: 85rpx;
+  vertical-align: middle;
+  text-align: center;
+  color: #000;
+  font-size: 30rpx;
+  margin-right: 80rpx;
+  position: relative;
+}
+
+.selected-menu {
+  color: #1b9ed9;
+}
+
+.selected-menu.selected-menu .icon {
+  color: #fafafa;
+  position: absolute;
+  top: 38rpx;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.second-nav {
+  height: 68rpx;
+  line-height: 68rpx;
+  clear: both;
+  padding: 0 26rpx;
+  background: #fafafa;
+}
+
+.second-nav>text {
+  display:block;
+  width: 84rpx;
+  height: 34rpx;
+  line-height: 32rpx;
+  padding-top: 4rpx;
+  border: 2rpx solid #aaa;
+  border-radius: 16rpx;
+  float: left;
+  color: #939292;
+  font-size: 28rpx;
+  text-align: center;
+  margin-right: 64rpx;
+  margin-top: 18rpx;
+}
+
+.second-nav>text:last-child {
+  margin-right: 0;
+}
+
+.second-nav>text.active {
+  background: #aaa;
+  color: #fff;
+}
+
+/* 农事 加工 */
+
+.material-list {
+  margin: 0 14rpx;
+  padding-top: 25rpx;
+}
+
+.material-list .item {
+  margin-bottom: 25rpx;
+  font-size: 26rpx;
+  color: #797979;
+  display: flex;
+}
+
+.material-list .item image {
+  width: 300rpx;
+  height: 197rpx;
+  float: left;
+  display: block;
+}
+
+.material-list-text {
+  margin-left: 23rpx;
+  width: 340rpx;
+  flex: 1;
+  height: 44rpx;
+  line-height: 44rpx;
+}
+
+.material-list .material-list-text>view {
+  border-bottom: 1rpx solid #c5e0e4;
+}
+
+.material-list .material-list-text .lookmore {
+  border: none;
+  color: #1b9ed9;
+  clear: both;
+  font-weight: bold;
+}
+
+.material-list .material-list-text .lookmore navigator {
+  width: 120 rpx;
+  float: right;
+}
+
+/* 运输 */
+
+.model-wrap {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.transport map {
+  position: fixed;
+  top: 150rpx;
+  left: 25rpx;
+  width: 700rpx;
+  height: 700rpx;
+  margin: 0 auto;
+  border-radius: 8rpx;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.model-hidden {
+  display: none;
+}
+
+/* 环境 */
+canvas {
+ margin: 0 auto;
+ width: 100%;
+ height: 440rpx
+}
+.environment .currdata {
+  text-align: center;
+  font-size: 90rpx;
+  background: linear-gradient(#76e9fa, #98d9ff);
+  height: 624rpx;
+  width: 100%;
+  color: #fff;
+  position: relative;
+}
+
+.environment .currdata swiper {
+  height: 340rpx !important;
+}
+.environment .currdata swiper swiper-item{
+ height: 340rpx;
+}
+.environment .currdata text {
+  font-size: 36rpx;
+  display: block;
+  margin-top: 10rpx;
+  height: 150rpx;
+  line-height: 150rpx;
+}
+
+.swiper-icon {
+  position: absolute;
+}
+
+.swiper-icon.swiper_next {
+  top: 0;
+  left: 540rpx;
+}
+
+.swiper-icon.swiper_prew {
+  top: 13rpx;
+  left: 180rpx;
+  transform: rotate(180deg);
+}
+
+/* 视频 */
+
+.video {
+  padding: 0 13rpx;
+}
+
+.video .title {
+  color: #1b9ed9;
+}
+.video  .fix-bottom{
+  color: #1b9ed9;
+  position: fixed;
+  bottom: 20rpx;
+}
+.video .title .iconfont{
+  margin-right: 4rpx;
+}
+.video .source {
+  width: 338rpx;
+  height: 188rpx;
+  border-top-left-radius: 12rpx;
+  border-top-right-radius: 12rpx;
+  overflow: hidden;
+  position: relative
+}
+
+.video .source image {
+  width: 338rpx;
+  height: 188rpx;
+  border-top-left-radius: 12rpx;
+  border-top-right-radius: 12rpx;
+}
+.video .source>view{
+  width: 338rpx;
+  height: 188rpx;
+  color: #fff;
+ position: absolute;
+ top:0;
+ left: 0;
+}
+.video .source>view .icon{
+margin-left: 120rpx;
+margin-top: 24rpx;
+  font-size: 82rpx
+}
+.video .source>view .subhead{
+ height: 50rpx;
+ line-height: 50rpx;
+ white-space: nowrap;
+ text-overflow: ellipsis;
+ overflow: hidden;
+ color: #797979;
+ padding-left: 20rpx;
+}
+.video-play{
+  position: fixed;
+  top: 200px;
+  width: 700rpx;
+  left: 25rpx;
+}
+.video-play video{
+  width: 700rpx;
+}
+.list-wrap{
+  width: 724rpx;
+  display: block;
+  clear: both;
+  height: auto
+}
+.video .disappear{
+display: none
+}
+.video .list-wrap .item {
+  width: 338rpx;
+  float: left;
+  display: block;
+}
+.videos .fixedTit{
+  position: fixed;
+  bottom: 0;
+}
+.list-wrap .item:nth-child(2n) {
+  margin-left: 23rpx;
+}
+
+.list-wrap .item video {
+  width: 340rpx;
+  height: 188rpx;
+}
+
+.list-wrap .item .name {
+  font-size: 28rpx;
+  color: #000;
+  padding-left: 18rpx;
+  margin-top: 6rpx;
+  display: block;
+}
+
+.list-wrap .item .address {
+  font-size: 26rpx;
+  color: #939292;
+  padding-left: 4rpx;
+  clear: both
+}
+.list-wrap .item .address image{
+  float: left;
+  width: 28rpx;
+  height: 34rpx;
+  margin: 6rpx 8rpx 0 14rpx;
+
+}
+.list-wrap .item .address .icon {
+  color: #1b9ed9;
+  margin-right: 8rpx;
+
+}

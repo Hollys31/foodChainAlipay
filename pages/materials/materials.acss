@@ -1,0 +1,237 @@
+
+.map {
+  width: 750rpx;
+  height: 694rpx;
+  background: #7cc2ee;
+  color: #fff;
+  position: relative;
+  overflow: hidden
+}
+
+.map  .grey-bg {
+  position: absolute;
+  background: #f7f7f7;
+  width: 100%;
+  height: 100rpx;
+  bottom: 0;
+  z-index: 1;
+}
+
+.materials .title {
+  width: 660rpx;
+  font-weight: bold;
+  padding: 20rpx 0;
+  background: #fff;
+  border-radius: 12rpx;
+  font-size: 22rpx;
+  color: #797979;
+  margin: 0 auto 22rpx;
+  padding-left: 24rpx;
+  clear: both
+}
+
+.materials .title  image {
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  float: left;
+  margin-right: 14rpx;
+}
+
+.materials .title  .info {
+  width: 460rpx;
+  float: left;
+}
+
+.materials  .info .name {
+  font-size: 30rpx;
+  color: #494949;
+  height: 46rpx;
+  line-height: 46rpx;
+  padding-left: 18rpx;
+}
+
+.materials .title .sort-data {
+  width: 480rpx;
+  display: flex;
+}
+
+.materials  .sort-data text {
+  color: #797979;
+  flex: 1;
+  text-align: center;
+  line-height: 36rpx;
+}
+
+.materials .sort-data-detail  text{
+  color: #ff5600;
+}
+
+.material-info .item:last-child.noborder {
+  height: 68rpx;
+  line-height: 68rpx;
+}
+
+.navtoMore {
+  height: 70rpx;
+  line-height: 70rpx;
+  background: -webkit-linear-gradient(left, #1adbf6, #51c1ff);
+  background: -moz-linear-gradient(left, #1adbf6, #51c1ff);
+  background: -o-linear-gradient(left, #1adbf6, #51c1ff);
+  background: linear-gradient(left, #1adbf6, #51c1ff);
+  border-radius: 12rpx;
+  margin: 20rpx 32rpx 0;
+  font-size: 28rpx;
+  color: #fff;
+  font-weight: bold;
+}
+
+.navtoMore .white {
+  width: 6rpx;
+  height: 30rpx;
+  background: #fff;
+  float: left;
+  margin-right: 28rpx;
+  margin-top: 20rpx;
+}
+
+.navtoMore .icon {
+  font-weight: normal;
+  float: right;
+  color: #fff;
+  margin-right: 15rpx;
+}
+
+.navtoMore .slide {
+  transform: rotate(90deg);
+  margin-top: -3rpx;
+}
+.navtoMore .slideUp{
+   transform: rotate(-90deg);
+}
+.transport {
+  width: 680rpx;
+  margin: 20rpx auto 0;
+}
+
+.transport .navtoMore {
+  margin: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.route {
+  background: #fff;
+  font-size: 24rpx;
+}
+
+.route  .item {
+  clear: both;
+  height: 104rpx;
+  line-height: 104rpx;
+  display: table;
+}
+
+.route .time {
+  color: #ababab;
+  padding-left: 14rpx;
+  line-height: 1.2em;
+  width: 70rpx;
+  float: left;
+  height: 84rpx;
+  padding-top: 20rpx;
+  margin-right: 14rpx;
+}
+
+.route .time text {
+  display: block;
+  font-size: 20rpx;
+  text-align: center;
+}
+
+.route .shape {
+  width: 30rpx;
+  float: left;
+  height: 104rpx;
+  position: relative;
+}
+
+.route .shape .circle {
+  width: 30rpx;
+  height: 30rpx;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 3rpx;
+  z-index: 3;
+}
+
+.route .shape .circle text {
+  width: 30rpx;
+  height: 30rpx;
+  padding: 5rpx;
+  background: #ababab;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.route .item:last-child .shape .circle {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.route .item:last-child .shape .circle .icon {
+  display: block;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.route .item:first-child .shape .circle  text {
+  background: #00cbff;
+}
+
+.route .item.only-one .line {
+  display: none;
+}
+
+.route  .line {
+  width: 2rpx;
+  height: 104rpx;
+  background: #ababab;
+  position: absolute;
+  top: 0;
+  left: 16rpx;
+  z-index: 1;
+}
+
+.route .item:first-child .line {
+  top: 50rpx;
+}
+
+.route .item:first-child .time {
+  color: #05c5ff;
+}
+
+.route .item:last-child .line {
+  height: 60rpx;
+}
+
+.route .address {
+  line-height: 1.2em;
+  font-size: 24rpx;
+  padding-left: 16rpx;
+  display: table-cell;
+  vertical-align: middle;
+  color: #494949;
+}
+
+.route .address text {
+  display: block;
+  font-size: 20rpx;
+  color: #797979;
+}
+.route .item:first-child .address,.route .item:first-child .address text {
+  color: #05c5ff;
+}
+
+

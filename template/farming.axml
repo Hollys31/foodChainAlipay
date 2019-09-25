@@ -1,0 +1,13 @@
+<template name="farming">
+  <block a:for="{{farmingData}}" a:key="index">
+    <view class='item clearfix'>
+      <image src='{{item.imgUrl}}' lazy-load='true' class='farming-img'/>
+      <view class='material-list-text'>
+        <view>作业名称：{{item.name}}</view>
+        <view>作业时间：{{item.time}}</view>
+        <view>负责人员：{{item.principal}}</view>
+         <view class='lookmore'><navigator hover-class='none' url='/pages/materials/detail'>查看详情</navigator></view>
+      </view>
+    </view>
+  </block>
+</template>

@@ -1,0 +1,147 @@
+
+
+
+.advice-sort .radio {
+  flex: 1
+}
+
+.advice-sort .radio-group {
+  display: flex;
+  align-items: center;
+  height: 110rpx;
+  line-height: 110rpx;
+}
+.advice-sort radio {
+  position: relative;
+  border-radius: 50%;
+  border-color: #38bffe;
+  font-size: 0;
+
+  top: 0;
+  margin-right: 8rpx;
+}
+
+
+textarea::-webkit-input-placeholder {
+  color: #cbcbcb;
+}
+
+textarea:-moz-placeholder {
+  color: #cbcbcb;
+}
+
+textarea::-moz-placeholder {
+  color: #cbcbcb;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #cbcbcb;
+}
+
+.section {
+  margin-top: 17rpx;
+}
+
+.advice-sort {
+  height: 110rpx;
+  border-top: 1rpx solid #eee;
+  border-bottom: 1rpx solid #eee;
+  padding: 0 37.5rpx;
+  background: #fff;
+}
+
+.advice-sort .radio-group {
+  font-size: 34rpx;
+}
+
+.advice-text {
+  height: 289rpx;
+  background: #fff;
+  padding: 13rpx 37.5rpx;
+  color: #666;
+  border-top: 1rpx solid #eee;
+  border-bottom: 1rpx solid #eee;
+}
+
+.advice-text textarea {
+  height: 230rpx;
+  width: 100%;
+  line-height: 1.6em;
+}
+
+.currentWordNumber {
+  text-align: right;
+  color: #cbcbcb;
+  display: block;
+}
+
+.advice-title {
+  font-size: 34rpx;
+  color: #494949;
+  background: #fff;
+  height: 100rpx;
+  line-height: 100rpx;
+  padding: 0 20rpx;
+}
+
+.advice-title>text {
+  color: #cbcbcb;
+}
+.advice-img {
+  min-height: 300rpx;
+  background: #fff;
+  padding: 13rpx 38rpx;
+  padding-top: 0;
+  clear: both
+}
+.advice-img .item{
+  float: left;
+  width: 196rpx;
+  height: 196rpx;
+   margin:0 13rpx 15rpx;
+   position: relative
+}
+.advice-img .item .del{
+ background: rgba(0, 0, 0, 0.5);
+ position: absolute;
+ bottom: 0;
+ height: 50rpx;
+ line-height: 50rpx;
+ left: 0;
+ right: 0;
+ color: #fff;
+ text-align: center;
+ font-size: 26rpx;
+}
+
+.advice-img .item image{
+  width: 196rpx;
+  height: 196rpx;
+  border-radius: 6rpx;
+ 
+}
+.advice-img .upload-wrap {
+  text-align: center;
+  width: 180rpx;
+  height: 180rpx;
+  padding: 10rpx 0;
+  background: #f4f4f4;
+  border-radius: 8rpx;
+}
+
+.advice-img .upload:before {
+  display: block;
+  width: 180rpx;
+  height: 180rpx;
+  margin-top: 70rpx;
+}
+
+.submit {
+  margin: 40rpx 37.5rpx;
+}
+
+.submit button {
+  background: -webkit-linear-gradient(left, #38b9fe, #1ed9f6);
+  color: #fff;
+  border-radius: 12rpx;
+}

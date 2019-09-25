@@ -1,0 +1,34 @@
+<!--pages/userCenter/myCenter.wxml-->
+<view class='userCenter'>
+  <view class='userInfo'>
+    <image lazy-load='true' src='/assets/images/headImage.jpg' />
+    <view class='user-text'>
+      {{userInfo.name}}
+      <text>{{userInfo.tel}}</text>
+    </view>
+  </view>
+  <view class='myCenter_wrap'>
+    <navigator class='item' url='/pages/useCenter/address'>
+      <i-icon  iconClass="icon icon-gradual icon-address"></i-icon>
+      <view>我的地址 </view>
+      <i-icon  iconClass="icon icon-more" fontSize="28rpx" color="#a9a9a9"></i-icon>
+    </navigator>
+    <view class='item' >
+        <i-icon iconClass="icon icon-gradual icon-weChat"></i-icon>
+        <button open-type="share" hover-class='none'>好友分享 </button>
+        <i-icon iconClass="icon icon-more" fontSize="28rpx" color="#a9a9a9"></i-icon>
+    </view>
+    <view class='item' onTap='makePhoneCall'>
+      <i-icon iconClass="icon icon-gradual icon-service"></i-icon>
+      <view>客服中心 </view>
+      <i-icon  iconClass="icon icon-more" fontSize="28rpx" color="#a9a9a9"></i-icon>
+    </view>
+    <navigator class='item' url='/pages/useCenter/advice'>
+      <i-icon  fontSize="28rpx" iconClass="icon icon-gradual icon-asking"></i-icon>
+      <view>意见反馈</view>
+      <i-icon iconClass="icon icon-more" fontSize="28rpx" color="#a9a9a9"></i-icon>
+    </navigator>
+    <view class='logout' onTap="logout">退出登录</view>
+  </view>
+  <tab-bottom  tabbar="{{tabbar}}"></tab-bottom>
+</view>

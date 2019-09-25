@@ -1,0 +1,70 @@
+
+/*模态*/
+.modal{
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000
+}
+.sel-variety {
+  width: 623rpx;
+  height: 709rpx;
+  position: fixed;
+  top: 180rpx;
+  left: 64rpx;
+  background: #fff;
+}
+.sel-variety .tips{
+  width: 328rpx;
+  font-size: 34rpx;
+  position: absolute;
+  top: 10rpx;
+  padding:40rpx 30rpx;
+  color: #fff;
+  line-height: 56rpx;
+}
+.sel-variety image {
+  width: 623rpx;
+  height: 319rpx;
+}
+
+.inner-variety {
+  padding-top: 14rpx;
+}
+
+.sel-variety .item {
+  margin:20rpx;
+  padding-left:55rpx;
+  padding-right: 20rpx;
+  font-size: 34rpx;
+  color: #fff;
+  height: 80rpx;
+  line-height: 80rpx;
+  clear: both;
+  border-radius: 20rpx;
+  background: #00e0ff
+}
+
+.sel-variety .inner-variety {
+  height: 400rpx;
+  overflow-y: scroll;
+}
+
+.sel-variety .item .icon {
+  float: right;
+  color: #fff;
+}
+
+.modal .close {
+  width: 90rpx;
+  height: 90rpx;
+  text-align: center;
+  position: fixed;
+  top: 960rpx;
+  color: #fff;
+  left: 320rpx;
+}

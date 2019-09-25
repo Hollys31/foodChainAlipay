@@ -1,0 +1,38 @@
+<view>
+  <form bindsubmit="bindFormSubmit">
+    <view class='advice-sort section'>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio">
+          <radio value="0" name="advice" color='#33bdfe' checked='true' /> 产品建议        
+        </label>
+        <label class="radio">
+          <radio value="1" name="advice" color='#33bdfe' /> 程序错误        
+        </label>
+        <label class="radio">
+          <radio value="2" name="advice" color='#33bdfe' /> 页面建议        
+        </label>
+      </radio-group>
+    </view>
+    <view class='advice-text section'>
+      <textarea placeholder="请在这里写下你的建议和意见" name="textarea" maxlength="{{max}}" />
+    </view>
+    <view class='advice-title'>上传凭证
+      <text>（不超过三张）
+      </text>
+    </view>
+    <view class='advice-img clearfix'>
+      <view class="item" a:for="{{certificates}}" a:key="index">
+        <image src="{{item}}" onTap='previewImg' data-index='{{index}}'/>
+        <view class="del" data-index="{{index}}" onTap="deleteImg">删除</view>
+      </view>
+      <view class='item upload-wrap' onTap='uploadImg'>
+        <i-icon iconClass="upload icon-upload" fontSize="160rpx" color="#aeaeae">
+        </i-icon>
+      </view>
+    </view>
+    <view class='submit'>
+      <button>提交反馈
+      </button>
+    </view>
+  </form>
+</view>

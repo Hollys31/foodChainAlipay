@@ -1,0 +1,6 @@
+{
+    "defaultTitle": "绿色源地",
+    "usingComponents": {
+    "i-icon": "/components/icon/icon"
+  }
+}

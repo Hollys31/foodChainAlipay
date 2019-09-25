@@ -1,0 +1,12 @@
+<template name="machining">
+  <block a:for="{{machiningData}}" a:key="index">
+    <view class='item clearfix'>
+      <image src='{{item.imgUrl}}' lazy-load='true' class='farming-img'/>
+      <view class='material-list-text'>
+        <view>作业类型：{{item.name}}</view>
+         <view>负责人员：{{item.principal}}</view>
+        <view>作业时间：{{item.time}}</view>
+      </view>
+    </view>
+  </block>
+</template>

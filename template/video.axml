@@ -1,0 +1,48 @@
+<template name="video">
+  <view class='live'>
+    <view class="{{isLive?'title':' fix-bottom'}}" onTap='changeLiveType'>
+      <text class="iconfont icon-live"></text> 直播
+    </view>
+    <view a:if="{{isLive}}" class="list-wrap">
+      <view class='item' a:for="{{videoObj.liveData}}" a:key="index">
+        <view class='source'>
+          <image src='/assets/images/headImage.jpg' />
+          <view>
+            <view class='subhead'># {{item.subhead}}</view>
+            <text class="iconfont icon icon-play"  onTap='getCurrentvideo'></i-icon>
+          </view>
+        </view>
+        <text class='name'>{{item.name}}</text>
+        <view class='address'>
+          <image src='/assets/images/address.png' /> {{item.address}}
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- -->
+  <view class='videos'>
+    <view class="{{!isLive?'title':' fix-bottom'}}" onTap='changeVideoType'>
+      <text class="iconfont icon-video"></text> 视频
+    </view>
+    <view a:if="{{!isLive}}" class="list-wrap">
+      <view class='item' a:for="{{videoObj.liveData}}" a:key="index">
+        <view class='source'>
+          <image src='/assets/images/headImage.jpg' />
+          <view>
+            <view class='subhead'># {{item.subhead}}</view>
+            <text  class="iconfont icon icon-play" fontSize="82rpx" onTap='getCurrentvideo'></text>
+          </view>
+        </view>
+        <text class='name'>{{item.name}}</text>
+        <view class='address'>
+          <image src='/assets/images/address.png' /> {{item.address}}
+        </view>
+      </view>
+    </view>
+    <view class="{{videoObj.isHidden?'model-hidden':'model-wrap'}}" onTap='closeVideoModel'></view>
+    <view class="{{videoObj.isHidden?'model-hidden':'video-play'}}">
+      <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
+        controls objectFit="cover"></video>
+    </view>
+  </view>
+</template>

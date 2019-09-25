@@ -1,0 +1,6 @@
+{
+"defaultTitle": "原材料",
+  "usingComponents": {
+     "i-icon": "/components/icon/icon"
+  }
+}

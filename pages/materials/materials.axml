@@ -1,0 +1,121 @@
+<view class='materials'>
+  <view class='map'>
+    <map id="map" class="map" controls="{{controls}}" markers="{{markers}}" include-points="{{markers}}" width="750rpx" height="700rpx">
+     <cover-image style="height: 50px;width: 50px;position: absolute; top: 100px;left: 10px;"  src="/assets/images/compound.png"/>
+    </map>
+  </view>
+   <view class='title clearfix'>
+      <image src="/assets/images/eg.jpg"></image>
+      <view class='info'>
+        <view class='name'>菜品信息</view>
+        <view class='sort-data'>
+          <text>菜品名称</text>
+          <text>主要食材</text>
+          <text>运输状态</text>
+        </view>
+        <view class='sort-data sort-data-detail'>
+          <text>胡萝卜炒青椒</text>
+          <text>胡萝卜、青椒</text>
+          <text>运输中</text>
+        </view>
+      </view>
+    </view>
+  <view class='transport'>
+    <view class='navtoMore'>
+      <view class='white'>
+      </view>      运输信息      
+      <text onTap="handelTransInfo">
+        <i-icon fontSize="30rpx" iconClass="icon icon-down {{!transSlideDown?' slide':' slideUp'}}">
+        </i-icon>
+      </text>
+    </view>
+    <view class='route' a:if="{{transSlideDown}}">
+      <view class='item'>
+        <view class='time'>01-21          
+          <text>09:30
+          </text>
+        </view>
+        <view class='shape'>
+          <text class="circle ">
+            <i-icon fontSize="20rpx" iconClass='icon-gou'>
+            </i-icon>
+          </text>
+          <view class='line'>
+          </view>
+        </view>
+        <view class='address'>运输完成          
+          <text>赣州市第三中学
+          </text>
+        </view>
+      </view>
+      <view class='item'>
+        <view class='time'>01-21          
+          <text>09:30
+          </text>
+        </view>
+        <view class='shape'>
+          <text class="circle">
+            <i-icon fontSize="20rpx" iconClass=' icon-transport'>
+            </i-icon>
+          </text>
+          <view class='line'>
+          </view>
+        </view>
+        <view class='address'>运输中
+        </view>
+      </view>
+      <view class='item'>
+        <view class='time'>01-21          
+          <text>09:30
+          </text>
+        </view>
+        <view class='shape'>
+          <text class="circle">
+            <i-icon fontSize="20rpx" iconClass=' icon-transport'>
+            </i-icon>
+          </text>
+          <view class='line'>
+          </view>
+        </view>
+        <view class='address'>餐品已发车          
+          <text>国际企业中心
+          </text>
+        </view>
+      </view>
+      <view class='item'>
+        <view class='time'>01-21          
+          <text>09:30
+          </text>
+        </view>
+        <view class='shape'>
+          <text class="circle">
+            <i-icon fontSize="20rpx" iconClass=" icon-book">
+            </i-icon>
+          </text>
+          <view class='line'>
+          </view>
+        </view>
+        <view class='address'>正在配餐中          
+          <text>您的菜品正在烹饪中
+          </text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='navtoMore'>
+    <navigator url='/pages/traceability/traceability' hover-class='none'>
+      <view class='white'>
+      </view>      溯源详情      
+      <i-icon iconClass='icon-more icon'>
+      </i-icon>
+    </navigator>
+  </view>
+  <view class='navtoMore'>
+    <navigator url='/pages/materials/materialList' hover-class='none'>
+      <view class='white'>
+      </view>      原材料详情      
+      <i-icon iconClass='icon-more icon'>
+      </i-icon>
+    </navigator>
+  </view>
+</view>

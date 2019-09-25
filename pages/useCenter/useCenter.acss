@@ -1,0 +1,93 @@
+
+.userInfo {
+  height: 300rpx;
+  padding: 0 45rpx;
+  background: #10a9f6;
+/*   background-image: linear-gradient(to top, #0fa4f6, #1bdbf6); */
+  color: #fff;
+  display: flex;
+}
+
+.userInfo>image {
+  width: 140rpx;
+  height: 140rpx;
+  border: 8rpx solid #e5e9ec;
+  border-radius: 50%;
+  margin-right: 45rpx;
+  margin-top: 65rpx;
+}
+
+.userInfo .user-text {
+  font-size: 42rpx;
+  flex: 1;
+  line-height: 1.4em;
+  padding-top: 80rpx;
+  font-weight: bold;
+}
+
+.userInfo .user-text>text {
+  font-size: 30rpx;
+  display: block;
+}
+
+.myCenter_wrap {
+  font-size: 34rpx;
+  padding-top: 26rpx;
+}
+
+.myCenter_wrap .item {
+  height: 110rpx;
+  background: #fff;
+  display: flex;
+  position:initial;
+  align-items: center;
+  padding: 0;
+  text-align: left;
+  box-sizing:initial;
+}
+.myCenter_wrap .item  button{
+  background: none;
+  border:;
+  -webkit-border:none;
+  flex: 1;
+  text-align: left;
+  padding: 0;
+  border:none
+}
+.myCenter_wrap .item button::after{ border: none; }
+.myCenter_wrap .icon {
+  display: block;
+  width: 100rpx;
+  text-align: center;
+  border-bottom: 2rpx solid #eee;
+  height: 110rpx;
+  line-height: 110rpx;
+  background-image: -webkit-gradient(linear, left 0, right 0, from(rgb(32, 136, 239)), to(rgb(120, 230, 255)));
+  -webkit-background-clip: text; /*必需加前缀 -webkit- 才支持这个text值 */
+  -webkit-text-fill-color: transparent; /*text-fill-color会覆盖color所定义的字体颜色： */
+}
+.myCenter_wrap .item:nth-child(2n) .icon ,.myCenter_wrap .item:nth-child(2n)>view{
+  border:none;
+}
+.myCenter_wrap .item:nth-child(2n){
+  margin-bottom: 26rpx;
+}
+
+.myCenter_wrap .icon-gradual text {
+  background-image: -webkit-gradient(linear, left 0, right 0, from(rgb(32, 136, 239)), to(rgb(120, 230, 255)));
+  -webkit-background-clip: text; /*必需加前缀 -webkit- 才支持这个text值 */
+  -webkit-text-fill-color: transparent; /*text-fill-color会覆盖color所定义的字体颜色： */
+}
+
+.myCenter_wrap .item>view {
+  flex: 1;
+  height: 110rpx;
+  line-height: 110rpx;
+  border-bottom: 2rpx solid #eee;
+}
+.logout{
+  text-align: center;
+  height: 110rpx;
+  line-height: 110rpx;
+  background: #fff;
+}

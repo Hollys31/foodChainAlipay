@@ -1,0 +1,9 @@
+<view class='scan-page'>
+<image src='/assets/images/scanQR.png' lazy-load='true'/>
+<text class='slogan'>质量安全追溯</text>
+<text>流通千万里  追溯零距离</text>
+<view class='scan-charge' onTap='handelScan'>
+  <icon class='icon' iconClass="icon-scan"></icon>
+  扫一扫
+</view>
+</view>

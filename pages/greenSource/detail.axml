@@ -1,0 +1,28 @@
+<view class='banner'>
+  <swiper autoplay='true' circular='true'>
+      <block a:for="{{imgLists}}" a:key="key">
+        <swiper-item>
+          <image src='/assets/images/indBanner.png' class="slide-image" />
+          <view class='name'>{{item.name}}<text>{{index+1}}/{{imgLists.length}}</text></view>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+<view class='info'>
+  <view class='item'>
+    <i-icon iconClass="icon icon-user"></i-icon>
+    责任人：<text>{{info.name}}</text>
+  </view>
+   <view class='item'>
+    <i-icon  iconClass="icon icon-tel"></i-icon>
+    电话：<text>{{info.phone}}</text>
+  </view>
+  <view class='item'>
+    <i-icon  iconClass="icon icon-address"></i-icon>
+    地址：<text onTap='getAddress'>{{info.address}}</text>
+  </view>
+</view>
+<view class='descript'>
+  <view class='title'><text></text>基地简介</view>
+  {{info.descript}}
+</view>

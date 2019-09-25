@@ -1,0 +1,27 @@
+
+.address-page .item {
+  height: 80rpx;
+  padding: 15rpx 37rpx;
+  background: #fff;
+  margin-top: 28rpx;
+  display: flex
+}
+.address{
+  font-size: 24rpx;
+  color: #797979;
+  font-weight: bold;
+  line-height: 1.8em;
+  flex: 1
+}
+.address>text {
+  font-size: 30rpx;
+  display: block;
+  color: #595959;
+
+}
+.stick{
+  margin-top: 10rpx;
+  width: 107rpx;
+  font-size: 26rpx;
+  color: #bfbfbf
+}

@@ -1,0 +1,18 @@
+<!--   选择菜品批次模态框 -->
+  <view class='modal'>
+    <view class='sel-variety'>
+      <image src='/assets/images/selbg.png' />
+      <view class="tips">赣州一中共{{varity.length}}次批次，批次信息仅供参考。请选择以下批次！</view>
+      <view class='inner-variety'>
+        <block a:for="{{varity}}" a:key="key">
+          <navigator hover-class='none' url='/pages/materials/materials' class='item'>
+            菜品批次:{{item.name}}
+            <i-icon  iconClass="icon icon-more"></i-icon>
+          </navigator>
+        </block>
+      </view>
+    </view>
+    <view class='close'  onTap='closeModal'>
+      <i-icon iconClass="icon-close1" fontSize="70rpx"></i-icon>
+    </view>
+  </view>

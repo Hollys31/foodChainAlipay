@@ -1,0 +1,39 @@
+.worker {
+  margin-top: 20rpx;
+}
+
+.worker .item {
+  height: 110rpx;
+  line-height: 110rpx;
+  background: #fff;
+  border-top: 1rpx solid #f5f5f5;
+  padding: 0 32rpx;
+  font-size: 32rpx;
+  color: #797979;
+  display: flex;
+}
+
+.worker .item>text {
+  color: #494949;
+  flex: 1;
+}
+.atlas{
+  margin-top: 30rpx;
+  background: #fff;
+}
+.atlas .title{
+  height: 110rpx;
+  line-height: 110rpx;
+  border-bottom: 1rpx solid #f5f5f5;
+  padding: 0 32rpx;
+}
+.atlas-img{
+  padding-top: 50rpx;
+  padding-bottom: 256rpx;
+}
+.atlas-img image{
+  display: block;
+  width: 686rpx;
+  margin: 0 auto;
+  
+}

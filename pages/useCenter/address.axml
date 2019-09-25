@@ -1,0 +1,8 @@
+<view class='address-page'>
+  <view class='item' a:for="{{addressLis}}" a:key="index">
+    <view class='address'>
+      <text>{{item.place}}</text> {{item.toDoor}}
+    </view>
+    <view class='stick' onTap='toTopAddress'><i-icon iconClass="icon-toTop"></i-icon> 置顶</view>
+  </view>
+</view>

@@ -1,0 +1,78 @@
+
+.banner {
+  width: 750rpx;
+  height: 445rpx;
+  position: relative;
+}
+
+.banner swiper, .banner swiper image {
+  width: 750rpx;
+  height: 445rpx;
+}
+
+.banner swiper .name {
+  padding: 0 20rpx;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 75rpx;
+  line-height: 75rpx;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 30rpx;
+  clear: both;
+}
+.banner .name text{
+  float: right
+}
+.info{
+  font-size: 28rpx;
+  color: #494949;
+  background: #fff
+}
+.info .item{
+  border-bottom: 1rpx solid #eee;
+  margin: 0 20rpx;
+  height: 98rpx;
+  line-height: 98rpx;
+  overflow: hidden;
+}
+.info .item:last-child{
+  border: none;
+}
+.info .item>text{
+  color: #11a3fe;
+  margin-left: 14rpx;
+  font-size: 26rpx;
+}
+.info .item>.icon{
+  color: #666;
+  margin-left: 0;
+  margin-right: 10rpx;
+}
+.descript{
+  margin-top: 25rpx;
+  background: #fff;
+  color: #000;
+  font-size: 26rpx;
+  padding: 0 20rpx 30rpx;
+  line-height: 46rpx
+}
+.descript .title{
+  height: 98rpx;
+  line-height: 98rpx;
+  font-size: 28rpx;
+  color: #494949;
+  border-bottom: 1rpx solid #eee;
+  margin-bottom: 20rpx;
+  clear: both
+}
+.descript .title>text{
+ width: 6rpx;
+ display: block;
+ float: left;
+ height: 28rpx;
+ background: #11a3fe;
+ margin: 38rpx 15rpx 0;
+}

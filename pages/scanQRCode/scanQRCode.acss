@@ -1,0 +1,37 @@
+
+.scan-page {
+  text-align: center;
+}
+
+.scan-page>image {
+  width: 484.72222222rpx;
+  height: 443.0555556rpx;
+  display: block;
+  margin: 145rpx auto;
+}
+
+.scan-page>text {
+  display: block;
+  line-height: 1.6em;
+  font-size: 30rpx;
+  color: #9ea0a2;
+}
+
+.scan-page .slogan {
+  font-size: 56rpx;
+  color: #37bafe;
+}
+
+.scan-charge {
+  width: 302rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-radius: 35rpx;
+  margin: 0 auto;
+  background: -webkit-linear-gradient(left, #38b9fe, #1ed9f6);
+  color: #fff;
+  margin-top: 90rpx;
+}
+.scan-charge .icon{
+  margin-right: 10rpx;
+}

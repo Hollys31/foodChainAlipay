@@ -1,0 +1,108 @@
+/* pages/start/start.wxss */
+
+.wxLogin {
+  width: 410rpx;
+  height: 300rpx;
+  background: #fff;
+  position: fixed;
+  left: 170rpx;
+  top: 50%;
+  z-index: 1000;
+  margin-top: -150rpx;
+  border-radius: 16rpx;
+}
+
+.wxLogin>text {
+  font-size: 40rpx;
+  display: block;
+  text-align: center;
+  height: 130rpx;
+  line-height: 130rpx;
+}
+
+.wxLogin .login {
+  background: #00bfff;
+  color: #fff;
+  font-size: 28rpx;
+  width: 330rpx;
+  height: 70rpx;
+  margin: 0 auto;
+  line-height: 70rpx;
+  border-radius: 8rpx;
+  margin-top: 12rpx;
+}
+
+.wxLogin .login .icon {
+  margin-left: 10rpx;
+  float: left;
+}
+
+.phone-info {
+  width: 692rpx;
+  padding: 0 30rpx;
+  height: 610rpx;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.phone-info .item {
+  font-size: 38rpx;
+  height: 110rpx;
+  line-height: 110rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+  color: #727272;
+  position: relative;
+}
+.phone-info .item.err{
+  border-bottom: 1rpx solid #f00
+}
+
+.phone-info .item input {
+  height: 108rpx;
+  color: #000;
+  padding: 0
+}
+
+.phone-info .item>text {
+  position: absolute;
+  left: 280rpx;
+  font-size: 30rpx;
+  top: 0;
+  color: #a6a6a6;
+}
+
+.phone-info .item .icon {
+  width: 30rpx;
+  left: auto;
+  position: absolute;
+  right: 10rpx;
+  top: 0;
+}
+.phone-info .change-phone{
+ font-size: 28rpx;
+ color: #56668e;
+ height: 140rpx;
+ line-height: 140rpx;
+}
+.buttons{
+  clear: both;
+  margin-top: 20rpx;
+}
+.buttons>view{
+  width: 320rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color: #00bfff;
+  text-align: center;
+  background: #ededed;
+  border-radius: 10rpx;
+  float: left;
+}
+.buttons>.allow{
+  color: #fff;
+  background: #00bfff;
+  margin-left: 50rpx;
+}

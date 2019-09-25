@@ -1,0 +1,54 @@
+
+page {
+  font-size: initial;
+  line-height: 1.6em;
+  background: #f7f7f7
+}
+.container{
+  margin: 0 16.67rpx;
+}
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: '.';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  clear: both;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.noMoreData{
+  font-size: 24rpx;
+  color: #a9a9a9;
+  text-align: center;
+  height: 151rpx;
+  line-height: 151rpx;
+}
+.triangle {
+  width: 18rpx;
+  height: 18rpx;
+  border: #999 solid;
+  border-width: 1px 1px 0 0;
+  transform: rotate(45deg);
+  margin-bottom: 10px;
+}
+.modal{
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000
+}
+
+

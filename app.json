@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/index/index",
+     "pages/materials/materialList",
+    
+    "pages/start/start",
+    "pages/materials/materials",
+   
+    "pages/materials/detail",
+    "pages/dishes/dishes",
+    "pages/greenSource/greenSource",
+    "pages/greenSource/detail",
+    "pages/traceability/traceability",
+    "pages/scanQRCode/scanQRCode",
+    "pages/useCenter/useCenter",
+    "pages/useCenter/address",
+    "pages/useCenter/advice"
+  ],
+  "window": {
+    "defaultTitle": "",
+    "titleBarColor": "#11a3fe"
+  }
+}

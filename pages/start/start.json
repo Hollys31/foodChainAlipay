@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "登录",
+    "usingComponents": {
+    "i-icon": "/components/icon/icon"
+  }
+}

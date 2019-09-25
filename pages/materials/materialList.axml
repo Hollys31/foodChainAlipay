@@ -1,0 +1,62 @@
+<view class='material-list-wrap'>
+  <view class='first-nav'>
+    <scroll-view class="menu-list" scroll-x scroll-with-animation>
+      <view a:for="{{firstSortData}}" class="menu-item {{curFirstInx===index ? 'selected-menu':''}}" a:key="{{index}}" data-index="{{index}}" data-id="{{item.cuid}}" onTap='selectItem'>        {{item.name}}                
+        <i-icon a:if="{{curFirstInx===index}}" iconClass="icon icon-trangle">
+        </i-icon>
+      </view>
+    </scroll-view>
+    <view class='more' onTap='handelMoreSort'>
+      <text>
+      </text>
+      <i-icon a:if="{{isHidden}}" iconClass=" icon icon-next">
+      </i-icon>
+      <i-icon a:if="{{!isHidden}}" iconClass="icon icon-close">
+      </i-icon>
+    </view>
+  </view>
+  <!-- 全部一级分类显示 -->
+  <view class='all-first-sort' hidden="{{isHidden}}">
+    <view class='item' a:for="{{firstSortData}}" a:key="index" data-index="{{index}}" onTap='chooseFirstSort'> {{item.name}}    
+    </view>
+  </view>
+  <!-- 二级分类 -->
+  <view class='second-nav'>
+    <block a:for="{{secondSortData}}" a:key="index">
+      <text class="{{currSecondInx===index ? 'active':''}}" data-index="{{index}}" data-value="{{item.value}}" onTap='getListType'>{{item.name}}      
+      </text>
+    </block>
+  </view>
+  <view class="{{currSecondInx==3?' ':'material-list'}}">
+    <!-- 农事 -->
+    <view class='farming' a:if="{{currSecondInx==0}}">
+      <import src="/template/farming" />
+      <template is="farming" data="{{farmingData}}">
+      </template>
+    </view>
+    <!--加工 -->
+    <view class='machining' a:if="{{currSecondInx==1}}">
+      <import src="/template/machining" />
+      <template is="machining" data="{{machiningData}}">
+      </template>
+    </view>
+    <!--  运输 -->
+    <view class='transport' a:if="{{currSecondInx==2}}">
+      <import src="/template/transport" />
+      <template is="transport" data="{{transportData,traceMapData}}">
+      </template>
+    </view>
+    <!--   环境 -->
+    <view class='environment' a:if="{{currSecondInx==3}}">
+      <import src="/template/environment" />
+      <template is="environment" data="{{environmentData,ec}}">
+      </template>
+    </view>
+    <!-- 视频 -->
+    <view class='video' a:if="{{currSecondInx==4}}">
+      <import src="/template/video" />
+      <template is="video" data="{{videoObj,isLive}}">
+      </template>
+    </view>
+  </view>
+</view>

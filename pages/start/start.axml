@@ -1,0 +1,23 @@
+<view class="container">
+  <view class='modal'>
+    <view class="wxLogin" hidden='{{isLoginHide}}'>
+      <text>登录食品安全配送</text>
+      <button  open-type="getAuthorize" scope='phoneNumber' onGetAuthorize="onGetAuthorize" class='login'>
+        <i-icon  iconClass="icon icon-aliy"></i-icon>支付宝账号快速登录
+      </button>
+    </view>
+    <view class='phone-info' hidden='{{!isLoginHide}}'>
+      <view class='item'>你的手机号</view>
+      <view class="item {{err?'err':''}}">
+        <input type="text" disabled='{{disabled}}'  placeholder='请输入手机号'  value='{{phone}}' focus="{{isFocus}}" bindinput='getChangedPhone'/>
+        <text  a:if="{{!isFocus}}">支付宝绑定号码</text>
+        <i-icon a:if="{{!isFocus}}"  iconClass="icon icon-gou" color='#00bfff'></i-icon>
+      </view>
+      <view class='change-phone' onTap='changePhone'>使用其他手机号码</view>
+      <view class='buttons'>
+        <view onTap='handelRefuse'>拒绝</view>
+        <view class='allow' onTap='handelAllow'>允许</view>
+      </view>
+    </view>
+  </view>
+</view>

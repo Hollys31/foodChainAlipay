@@ -1,0 +1,15 @@
+<view class='greens-list'>
+    <block a:for="{{greens}}" a:for-index="index" a:key="index">
+      <navigator hover-class='none' url='/pages/greenSource/detail' class='item clearfix'>
+        <image src='{{item.imgUrl}}' />
+        <view class='item-info'>
+          <text class='name'>{{item.name}}</text>
+          <text>{{item.address}}</text>
+        </view>
+        <view class='for-more'>
+          <i-icon  iconClass="icon icon-more" color="#e1e1e1"></i-icon>
+        </view>
+     </navigator> 
+    </block>
+    <!--   <view wx:if="{{noMore}}" class='noMoreData'> 没有更多了 </view> -->
+  </view>
